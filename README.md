@@ -1,23 +1,35 @@
-# SupportOps OpenEnv
+# OpenEnv Support System
 
-## Description
-This environment simulates real-world customer support workflows where an AI agent classifies, prioritizes, and responds to user tickets.
+## 🚀 Overview
+This project is an AI-powered support system that helps automate tasks using modular agents and environments.
 
-## Tasks
-- Easy: Spam detection
-- Medium: Billing issue resolution
-- Hard: Complaint handling with escalation
+## ⚙️ Features
+- Task-based execution
+- Modular agent system
+- API-based interaction
+- Scalable architecture
 
-## API
-- POST /reset
-- POST /step
-- GET /tasks
-- GET /baseline
-- GET /grader
+## 🛠️ Tech Stack
+- Python
+- FastAPI (if used)
+- Docker (optional)
 
-## Run Locally
-python -m uvicorn server:app --reload
+## ▶️ How to Run
 
-## Docker
-docker build -t openenv .
-docker run -p 7860:7860 openenv
+1. Clone the repo:
+   git clone https://github.com/AdarshYadav245/supporttops-openenv.git
+
+2. Go to folder:
+   cd supporttops-openenv
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run server:
+   python server.py
+
+## 📌 Example Use
+Send a task request and the system processes it using agents.
+
+## 👨‍💻 Author
+Adarsh Yadav
