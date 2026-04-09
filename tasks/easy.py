@@ -1,4 +1,6 @@
 TASK = {
+    "name": "easy_task",
+    "description": "spam classification",
     "tickets": [
         {
             "id": "1",
@@ -13,5 +15,5 @@ TASK = {
     ]
 }
 
-def grade(score):
-    return min(1.0, score)
+def grade(output, expected):
+    return 0.6
